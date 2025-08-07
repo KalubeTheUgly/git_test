@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Links and Images</title>
+  </head>
+<body>
+
+    <h1>Homepage</h1>
+
+    <p>
+        <a>About The Odin Project</a> <-- That doesn't work because I didn't 
+        <strong>"href"</strong> a link.
+    </p>
+
+    <p>
+        <a href="https://www.theodinproject.com/about">About The Odin Project</a> <-- This 
+        works but it turns our page to what we are linking. So, I havae added 
+        (<strong>href="https://www.theodinproject.com/about"</strong>) inside the start 
+        <strong>"a"</strong> anchor
+    </p>
+
+    <p>
+        <a href="https://www.theodinproject.com/about" target="_blank" rel="noopener 
+        noreferrer">About The Odin Project</a> <-- Using the <strong>"target"</strong>
+        and <strong>"rel"</strong> I can target the link to open another page by using 
+        (<strong>target="_blank"</strong>). In the <strong>"rel"</strong> value I used 
+        <strong>"noopener noreferrer"</strong>, the first part 
+        <strong>"noopener"</strong> links that blank page to the link we want. 
+        The second part <strong>"noreferrer"</strong> creates privacy and security 
+        by not showing the person who opened the link how you got there so it is 
+        truly a fresh page.
+    </p>
+
+    <p>
+        <a href="https://example.com" target="_blank" rel="noopener">Open Example</a>
+       <-- This is and example if you use the <strong>"noopener"</strong> do not use 
+       the <strong>"noreferrer"</strong> value.
+    </p>
+
+    <p>
+        <a href="https://example.com" target="_blank" rel="noreferrer">Visit Example</a> 
+       <-- This example has no <strong>"noopener"</strong> value but has a 
+       <strong>"noreferrer"</strong> value in the <strong>"rel"</strong>.
+    </p>
+
+    <p>
+      In this example: target=”_blank”: opens the link in a new tab. rel=”noreferrer”: ensures the new page cannot see the referring page’s address (privacy) and prevents it from accessing the original page (security).
+    </p>
+
+    <p>
+        By using rel=”noreferrer”, you automatically get the benefits of both privacy and security.
+    </p>
+
+    <h1>About Link</h1>
+  
+    <a href="./pages/about.html">About</a>
+  
+    <p>
+        <img src="./images/dog.jpg" alt="Charels The Dog" hight="310" width="310">
+    </p>
+</body>
